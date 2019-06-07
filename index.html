@@ -1,3 +1,85 @@
+<style>
+
+/* Banner */
+h1 {
+	line-height: 1;
+	margin-top: 0;
+	color: #fff;
+	display: inline-block;
+	position: relative;
+}
+
+p {
+	margin-top: 4rem;
+	color: #fff;
+	font-size: 0.9rem;
+	line-height: 1
+}
+
+.alpha {
+	font-size: 5rem;
+	margin-bottom: 0.33rem;
+	font-family: 'Bree Serif'
+}
+
+.beta {
+	font-size: 1.3333333333333333rem;
+	margin-bottom: 1.2375rem;
+	font-family: 'Oswald';
+	letter-spacing: 8px;
+	text-transform: uppercase;
+}
+
+.regular{font-weight: 400;}
+
+.double-header-line:before, .double-header-line:after{
+	content: "";
+	display: block;
+	position: absolute;
+	width:7rem;
+	background-color: transparent;
+	height: 4px;
+	border-top: 1px solid #fff;
+	border-bottom:1px solid #fff;
+	top: 50%;
+	margin-bottom: -4px;
+}
+.double-header-line:before{
+	left: -7.5rem;
+}
+.double-header-line:after{
+	right: -7.5rem;
+}
+
+.wrapper{
+	max-width: 53.33rem;
+	margin: 0 auto;
+	position: relative;
+	z-index: 10;
+	transform: translateY(-50%);
+	top:50%;
+	text-align: center;
+}
+
+section {
+
+	background: -webkit-linear-gradient(90deg, #485563 10%, #29323c 90%); /* Chrome 10+, Saf5.1+ */
+	background:    -moz-linear-gradient(90deg, #485563 10%, #29323c 90%); /* FF3.6+ */
+	background:     -ms-linear-gradient(90deg, #485563 10%, #29323c 90%); /* IE10 */
+	background:      -o-linear-gradient(90deg, #485563 10%, #29323c 90%); /* Opera 11.10+ */
+	background:         linear-gradient(90deg, #485563 10%, #29323c 90%); /* W3C */
+
+}
+
+@media screen and (min-width: 1440px) {
+	section{height:300px}
+}
+/* Ende Banner */
+
+
+</style>
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,6 +93,18 @@
 </head>
 
 <body>
+
+	<!-- Banner -->
+	<banner>
+		<section data-description="Playful type">
+			<div class="wrapper">
+	 			<h1 class="alpha regular double-header-line">FearPong</h1>
+				<p class="beta regular">The future of drinking games</p>
+	 		</div>
+		</section>
+	</banner>
+	<!-- Ende Banner -->
+
 		<div id ="sidebar" onclick="togglemenu()">
 			<div class="toggle-btn">
 				<span></span>
