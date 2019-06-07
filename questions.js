@@ -1,5 +1,12 @@
+let file = "questions.txt";
+
 function readFile(){
-  jQuery.get('questions.txt', function(txt){
-    $('#output').text(txt);
-  }
+    jQuery.get(file,function(txt){
+        var lines = txt.split("\n");
+        for (var i = 0, len = lines.length; i < len; i++) {
+            lines.push(i);
+        }
+    });
 }
+
+console.
