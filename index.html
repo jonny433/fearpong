@@ -1,18 +1,28 @@
+<!DOCTYPE html>
 <html>
 <head>
 	<title>Fear Pong Extended</title>
 	<link rel="stylesheet" type="text/css" href="index.css">
+	<script type="text/javascript">
+		function togglemenu(){
+			document.getElementById('sidebar').style.left = 0;
+		}
+	</script>
 </head>
+
 <body>
-	<div id="maincontainer">
-		<ul class="nav">
+		<div id ="sidebar" onclick="togglemenu()">
+			<div class="toggle-btn">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		<ul>
 			<li> <a class="spiel" id="home">Spiel</a></li>
 			<li> <a href="#aufgaben">Aufgaben</a></li>
 			<li> <a href="#spielregeln">Spielregeln</a></li>
 			<li> <a href="#team">Das Team</a></li>
-		</ul>
-	<div
-
-	</div>
+			</ul>
+		</div>
 </body>
 </html>
