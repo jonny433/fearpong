@@ -2,16 +2,24 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Becher</title>
+    <title>Game</title>
     <style>
     body{
-      background-color: ;
+      background: linear-gradient(90deg, rgba(72, 85, 99, 0.7) 10%, rgba(41, 50, 60, 0.8) 90%);
     }
+    /*Ich weis noch nicht genau wie ich da den Rahmen dynamisch um das gesamte Spielfeld lege
+    .spielfeld{
+      width: 245px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   margin: 10px 5px;
+   padding: 4px;
+    }*/
     team1 > becher{
-      background-color: blue;
+      background-color: #1E88E5;
     }
     team2 > becher{
-      background-color: red;
+      background-color: #E53935;
     }
     becher{
 /***********Variablen****************/
@@ -26,6 +34,22 @@
     border: 1px solid black;
     border-radius: 100%;
     text-align: center;
+    opacity: 0.7;
+    box-shadow: 6px 6px 6px;
+    }
+    @media(min-width: 1000px){
+      becher{
+        --groesse: 100px; /*50*/
+        --anfang: 20px; /*10*/
+        --abstand: 10px; /*5*/
+        --teamabstand: 250px; /*125*/
+      }
+    }
+    becher:hover{
+      width: calc(var(--groesse) * 1.15);
+      height: calc(var(--groesse) * 1.15);
+      z-index: 2;
+      opacity: 1;
     }
 /***********************************/
 
@@ -122,6 +146,7 @@
     </style>
   </head>
   <body>
+  <div class="spielfeld">
     <team1>
       <becher class="t10">
         </becher>
@@ -166,5 +191,9 @@
       <becher class="t29">
         </becher>
     </team2>
+  </div>
+
+  <div class"Aufgabenfeld">
+  </div>
   </body>
 </html>
