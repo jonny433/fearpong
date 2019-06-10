@@ -5,7 +5,7 @@
     <title>Becher</title>
     <style>
     body{
-      background-color: green;
+      background-color: ;
     }
     team1 > becher{
       background-color: blue;
@@ -14,56 +14,63 @@
       background-color: red;
     }
     becher{
+/***********Variablen****************/
+      --groesse: 50px;
+      --anfang: 10px;
+      --abstand: 5px;
+/***********************************/
     position: absolute;
-    width: 50px;
-    height: 50px;
+    width: var(--groesse, 50px);
+    height: var(--groesse, 50px);
     border: 1px solid black;
     border-radius: 100%;
     text-align: center;
     }
 /***********************************/
+
+/***********************************/
     .t10{
-      top: 10px;
-      left: 10px;
+      top: var(--anfang, 10px);
+      left: var(--anfang, 10px);
     }
     .t11{
-      top: 65px;
-      left: 10px;
+      top: calc(var(--anfang) + var(--abstand) + var(--groesse));
+      left: var(--anfang);
     }
     .t12{
-      top: 120px;
-      left: 10px;
+      top: calc(var(--anfang) + 2*var(--abstand) + 2*var(--groesse));
+      left: var(--anfang);
     }
     .t13{
-      top: 175px;
-      left: 10px;
+      top: calc(var(--anfang) + 3*var(--abstand) + 3*var(--groesse));
+      left: var(--anfang);
     }
 /***********************************/
     .t14{
-      top: 37.5px;
-      left: 65px;
+      top: calc(var(--anfang) + var(--abstand)/2 + var(--groesse)/2);
+      left: calc(var(--anfang) + var(--abstand) + var(--groesse));
     }
     .t15{
-      top: 92.5px;
-      left: 65px;
+      top: calc(var(--anfang) + var(--abstand) * 1.5 + var(--groesse) * 1.5);
+      left: calc(var(--anfang) + var(--abstand) + var(--groesse));
     }
     .t16{
-      top: 147.5px;
-      left: 65px;
+      top: calc(var(--anfang) + var(--abstand) * 2.5 + var(--groesse) * 2.5);
+      left: calc(var(--anfang) + var(--abstand) + var(--groesse));
     }
 /***********************************/
     .t17{
-      top: 65px;
-      left: 120px;
+      top: calc(var(--anfang) + var(--abstand) + var(--groesse));
+      left: calc(var(--anfang) + 2*var(--abstand) + 2*var(--groesse));
     }
     .t18{
-      top: 120px;
-      left: 120px;
+      top: calc(var(--anfang) + 2*var(--abstand) + 2*var(--groesse));
+      left: calc(var(--anfang) + 2*var(--abstand) + 2*var(--groesse));
     }
 /***********************************/
     .t19{
       top: 92.5px;
-      left: 175px;
+      left: calc(var(--anfang) + 3*var(--abstand) + 3*var(--groesse));
     }
 /***********************************/
 /***********************************/
