@@ -1,8 +1,14 @@
 <!DOCTYPE html>
+
 <html>
   <head>
     <meta charset="utf-8">
     <title>Game</title>
+
+<!-- BITTE CSS SEPARIEREN (Paulo)
+!!!!!!!
+!!!!!!!
+-->
     <style>
     body{
       background: linear-gradient(90deg, rgba(72, 85, 99, 0.7) 10%, rgba(41, 50, 60, 0.8) 90%);
@@ -15,6 +21,7 @@
    margin: 10px 5px;
    padding: 4px;
     }*/
+
     team1 > becher{
       background-color: #1E88E5;
     }
@@ -147,6 +154,8 @@
   </head>
   <body>
   <div class="spielfeld">
+
+
     <team1>
       <becher class="t10">
         </becher>
@@ -193,7 +202,30 @@
     </team2>
   </div>
 
-  <div class"Aufgabenfeld">
-  </div>
+<!-- wenn du möchtest jonny, kannst du gerne das css dazu machen :) -->
+  <textarea id="aufgabenfeld"></textarea>
+  <input type="file" id="fileReader"/>
+
+    <!-- Code wurde am Ende eingebunden, damit sicher gestellt werden kann, dass alle html tags auch vollständig geladen sind -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script type="text/javascript">
+    let data = [];
+
+    const input = document.getElementById('fileReader')
+    input.addEventListener('change', function(e){
+      console.log(input.files)
+      const reader = new FileReader()
+      reader.onload = function (){
+        data = reader.result;
+        document.getElementById("aufgabenfeld").innerHTML = reader.result;
+      }
+      reader.readAsText(input.files[0])
+    }, false)
+
+    function changeText(){
+
+    }
+
+    </script>
   </body>
 </html>
