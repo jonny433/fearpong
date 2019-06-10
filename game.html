@@ -15,9 +15,10 @@
     }
     becher{
 /***********Variablen****************/
-      --groesse: 50px;
-      --anfang: 10px;
-      --abstand: 5px;
+      --groesse: 50px; /*50*/
+      --anfang: 10px; /*10*/
+      --abstand: 5px; /*5*/
+      --teamabstand: 125px; /*125*/
 /***********************************/
     position: absolute;
     width: var(--groesse, 50px);
@@ -34,88 +35,88 @@
       left: var(--anfang, 10px);
     }
     .t11{
-      top: calc(var(--anfang) + var(--abstand) + var(--groesse));
-      left: var(--anfang);
+      top: calc(var(--anfang) + var(--abstand) + var(--groesse)); /*65*/
+      left: var(--anfang); /*10*/
     }
     .t12{
-      top: calc(var(--anfang) + 2*var(--abstand) + 2*var(--groesse));
+      top: calc(var(--anfang) + 2*var(--abstand) + 2*var(--groesse)); /*120*/
       left: var(--anfang);
     }
     .t13{
-      top: calc(var(--anfang) + 3*var(--abstand) + 3*var(--groesse));
+      top: calc(var(--anfang) + 3*var(--abstand) + 3*var(--groesse)); /*175*/
       left: var(--anfang);
     }
 /***********************************/
     .t14{
-      top: calc(var(--anfang) + var(--abstand)/2 + var(--groesse)/2);
-      left: calc(var(--anfang) + var(--abstand) + var(--groesse));
+      top: calc(var(--anfang) + var(--abstand)/2 + var(--groesse)/2); /*37.5*/
+      left: calc(var(--anfang) + var(--abstand) + var(--groesse)); /*65*/
     }
     .t15{
-      top: calc(var(--anfang) + var(--abstand) * 1.5 + var(--groesse) * 1.5);
+      top: calc(var(--anfang) + var(--abstand) * 1.5 + var(--groesse) * 1.5); /*92.5*/
       left: calc(var(--anfang) + var(--abstand) + var(--groesse));
     }
     .t16{
-      top: calc(var(--anfang) + var(--abstand) * 2.5 + var(--groesse) * 2.5);
+      top: calc(var(--anfang) + var(--abstand) * 2.5 + var(--groesse) * 2.5); /*147.5*/
       left: calc(var(--anfang) + var(--abstand) + var(--groesse));
     }
 /***********************************/
     .t17{
-      top: calc(var(--anfang) + var(--abstand) + var(--groesse));
-      left: calc(var(--anfang) + 2*var(--abstand) + 2*var(--groesse));
+      top: calc(var(--anfang) + var(--abstand) + var(--groesse)); /*65*/
+      left: calc(var(--anfang) + 2*var(--abstand) + 2*var(--groesse)); /*120*/
     }
     .t18{
-      top: calc(var(--anfang) + 2*var(--abstand) + 2*var(--groesse));
+      top: calc(var(--anfang) + 2*var(--abstand) + 2*var(--groesse)); /*120*/
       left: calc(var(--anfang) + 2*var(--abstand) + 2*var(--groesse));
     }
 /***********************************/
     .t19{
-      top: 92.5px;
-      left: calc(var(--anfang) + 3*var(--abstand) + 3*var(--groesse));
+      top: calc(var(--anfang) + var(--abstand) * 1.5 + var(--groesse) * 1.5); /*92.5*/
+      left: calc(var(--anfang) + 3*var(--abstand) + 3*var(--groesse)); /*175*/
     }
 /***********************************/
 /***********************************/
     .t20{
-      top: 92.5px;
-      left: 300px;
+      top: calc(var(--anfang) + var(--abstand) * 1.5 + var(--groesse) * 1.5); /*92.5*/
+      left: calc(var(--anfang) + 3*var(--abstand) + 3*var(--groesse) + var(--teamabstand)); /*300*/
     }
 /***********************************/
     .t21{
-      top: 65px;
-      left: 355px;
+      top: calc(var(--anfang) + var(--abstand) + var(--groesse)); /*65*/
+      left: calc(var(--anfang) + 4*var(--abstand) + 4*var(--groesse) + var(--teamabstand)); /*355*/
     }
     .t22{
-      top: 120px;
-      left: 355px;
+      top: calc(var(--anfang) + 2*var(--abstand) + 2*var(--groesse)); /*120*/
+      left: calc(var(--anfang) + 4*var(--abstand) + 4*var(--groesse) + var(--teamabstand));
     }
 /***********************************/
     .t23{
-      top: 37.5px;
-      left: 410px;
+      top: calc(var(--anfang) + var(--abstand)/2 + var(--groesse)/2); /*37.5*/
+      left: calc(var(--anfang) + 5*var(--abstand) + 5*var(--groesse) + var(--teamabstand));/*410*/
     }
     .t24{
-      top: 92.5px;
-      left: 410px;
+      top: calc(var(--anfang) + var(--abstand) * 1.5 + var(--groesse) * 1.5); /*92.5*/
+      left: calc(var(--anfang) + 5*var(--abstand) + 5*var(--groesse) + var(--teamabstand));
     }
     .t25{
-      top: 147.5px;
-      left: 410px;
+      top: calc(var(--anfang) + var(--abstand) * 2.5 + var(--groesse) * 2.5); /*147.5*/
+      left: calc(var(--anfang) + 5*var(--abstand) + 5*var(--groesse) + var(--teamabstand));
     }
 /***********************************/
     .t26{
-      top: 10px;
-      left: 465px;
+      top: var(--anfang, 10px);
+      left: calc(var(--anfang) + 6*var(--abstand) + 6*var(--groesse) + var(--teamabstand)); /*465*/
     }
     .t27{
-      top: 65px;
-      left: 465px;
+      top: calc(var(--anfang) + var(--abstand) + var(--groesse)); /*65*/
+      left: calc(var(--anfang) + 6*var(--abstand) + 6*var(--groesse) + var(--teamabstand));
     }
     .t28{
-      top: 120px;
-      left: 465px;
+      top: calc(var(--anfang) + 2*var(--abstand) + 2*var(--groesse)); /*120*/
+      left: calc(var(--anfang) + 6*var(--abstand) + 6*var(--groesse) + var(--teamabstand));
     }
     .t29{
-      top: 175px;
-      left: 465px;
+      top: calc(var(--anfang) + 3*var(--abstand) + 3*var(--groesse)); /*175*/
+      left: calc(var(--anfang) + 6*var(--abstand) + 6*var(--groesse) + var(--teamabstand));
     }
 /***********************************/
     </style>
