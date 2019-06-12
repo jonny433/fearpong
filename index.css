@@ -3,34 +3,46 @@
   margin: 0;
   padding: 0;
 }
-
+/* ---------- Menü ----------- */
 #sidebar {
   position: fixed;
   width: 100%;
   height: 100%;
-  left: -100%;
+  top: -100%;
   background-color: #f1f1f1;
+  z-index: 1;
+  transition: 0.5s;
 }
+    /* Menü Punkte */
+    #sidebar li a {
+      display: block;
+      color: black;
+      font-size: 380%;
+      padding: 30px;
+      text-align: center;
+      text-decoration: none;
+    }
+    /*Menü Link  farbe wechseln beim drübergehen */
+    #sidebar li a:hover {
+      background-color: #555;
+      color: white;
+    }
+    /* schliess button */
+    #sidebar .closebtn {
+     position: absolute;
+     top: 20px;
+     right: 45px;
+     font-size: 60px;
+    }
 
-#sidebar li a {
-  display: block;
-  color: black;
-  font-size: 380%;
-  padding: 30px;
-  text-align: center;
-  text-decoration: none;
-}
-/* Link farbe */
-#sidebar li a:hover {
-  background-color: #555;
-  color: white;
-}
-/* der Menü-Button*/
+/* der Menü-Button zum öffnen*/
 .toggle-btn{
-  cursor: pointer;
   position: absolute;
-  left: 105%;
-  top: 15px;
+  top: 50px;
+  left: 45px;
+  font-size: 80px;
+
+
 }
 /*die bestandteile des Menü-Buttons (Gitter)*/
 .toggle-btn span{
@@ -39,9 +51,5 @@
   width: 30px;
   height: 5px;
   margin: 3px;
-
 }
-/* zeigt sidebar im aktiven Zustand (wenn menübutton geklickt)*/
-sidebar.active{
-  left: 0;
-}
+/* ----------- Ende Menü  CSS ----------- */

@@ -89,14 +89,17 @@ section {
 	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 	<script type="text/javascript">
 		function togglemenu(){
-			document.getElementById('sidebar').style.left = 0;
+			document.getElementById('sidebar').style.top = "0";
+		}
+		function closemenu(){
+			document.getElementById('sidebar').style.top = "-100%";
 		}
 	</script>
 </head>
 
 <body>
 
-	<!-- Banner -->
+	<!-- -----------------Banner---------- -->
 	<banner>
 		<section data-description="Playful type">
 			<div class="wrapper">
@@ -105,20 +108,30 @@ section {
 	 		</div>
 		</section>
 	</banner>
-	<!-- Ende Banner -->
+	<!-- ---------------Ende Banner------ -->
 
-		<div id ="sidebar" onclick="togglemenu()">
-			<div class="toggle-btn">
-				<span></span>
-				<span></span>
-				<span></span>
-			</div>
-		<ul>
-			<li> <a href="game.html" id="home">Spiel</a></li>
-			<li> <a href="#aufgaben">Aufgaben</a></li>
-			<li> <a href="spielregeln.html">Spielregeln</a></li>
-			<li> <a href="#team">Das Team</a></li>
-			</ul>
+ 	<!-- --------------Menü Anfang ------------------->
+	<!-- Menü aufklapp button -->
+	<div class="toggle-btn" onclick="togglemenu()">
+		<span></span>
+		<span></span>
+		<span></span>
+	</div>
+	<!-- Eigentliches menü -->
+		<div id ="sidebar" >
+				<!-- Menü schliess button -->
+				<div class = "closebtn" onclick="closemenu()">
+					&times;
+				</div>
+
+	   	<!-- Liste mit Links zu den einzelnen Seiten -->
+			<ul>
+				<li> <a href="game.html" id="home">Spiel</a></li>
+				<li> <a href="#aufgaben">Aufgaben</a></li>
+				<li> <a href="spielregeln.html">Spielregeln</a></li>
+				<li> <a href="#team">Das Team</a></li>
+				</ul>
 		</div>
+		<!-- -----------Ende Menü------------ -->
 </body>
 </html>
