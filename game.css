@@ -8,7 +8,18 @@
 }
 /***********************************/
 body{
+  background-image:
+    linear-gradient(hsla(215,30%,70%,0.9) 0%, hsla(215,30%,70%,0) 50%, hsla(215,30%,70%,0.9) 100%),
+    linear-gradient(to right, hsla(215,30%,80%,0.8) 30%, white 50%, hsla(215,30%,80%,0.8) 70%);
+
+  /* ----- Von Jonny gesetzter Background...
+  Drüber hab ich nen anderen Background als
+  Vorschlag gesetzt. Wirkt als heller Kontrast
+  besser zum dunklen Banner als dunkel auf dunkel.
+  (Moritz) -----
+
   background: linear-gradient(90deg, rgba(72, 85, 99, 0.7) 10%, rgba(41, 50, 60, 0.8) 90%);
+  */
 }
 .spielfeld{
   height: calc(var(--anfang) + 4*var(--abstand) + 4*var(--groesse));/*230*/
