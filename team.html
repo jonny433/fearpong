@@ -78,11 +78,15 @@ body {
   }
 
   section {
-    background: -webkit-linear-gradient(90deg, #485563 10%, #29323c 90%); /* Chrome 10+, Saf5.1+ */
-    background:    -moz-linear-gradient(90deg, #485563 10%, #29323c 90%); /* FF3.6+ */
-    background:     -ms-linear-gradient(90deg, #485563 10%, #29323c 90%); /* IE10 */
-    background:      -o-linear-gradient(90deg, #485563 10%, #29323c 90%); /* Opera 11.10+ */
-    background:         linear-gradient(90deg, #485563 10%, #29323c 90%); /* W3C */
+    height:250px;
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-top: -8px;
+    background: -webkit-linear-gradient(90deg, #485563 10%, #29323c 90%);
+    background:    -moz-linear-gradient(90deg, #485563 10%, #29323c 90%);
+    background:     -ms-linear-gradient(90deg, #485563 10%, #29323c 90%);
+    background:      -o-linear-gradient(90deg, #485563 10%, #29323c 90%);
+    background:         linear-gradient(90deg, #485563 10%, #29323c 90%);
 
   }
 
@@ -158,9 +162,11 @@ body {
   }
   /* Ende Team */
 
-  @media screen and (min-width: 1440px) {
-    section{height:300px}
-  }
+  /* @media screen and (min-width: 1440px) {
+    section.banner {
+      height:300px
+    }
+  } */
   @media screen and (max-width: 650px) {
     .column {
       width: 100%;
@@ -173,7 +179,7 @@ body {
 
 <body>
   <!-- Banner -->
-  <section data-description="Banner">
+  <section class="banner" data-description="Banner">
     <div class="wrapper">
       <h1 class="banner alpha regular double-header-line">FearPong</h1>
       <p class="banner beta regular">The future of drinking games</p>
@@ -183,7 +189,6 @@ body {
 
   <!-- Team -->
 <h1 class="heading">Meet The Team</h1>
-<br>
 
 <div class="row">
   <div class="column">
