@@ -34,7 +34,7 @@ body {
   .alpha {
     font-size: 5rem;
     margin-bottom: 0.33rem;
-    font-family: 'Bree Serif'
+    font-family: 'Bree Serif';
   }
 
   /* "THE FUTURE OF DRINKING GAMES" */
@@ -92,11 +92,15 @@ body {
 
 /* Ende Banner CSS */
 
+h2,p {
+  font-family: "Century Gothic", CenturyGothic;
+}
+
 /* Heading CSS */
 .heading {
   font-family: "Century Gothic", CenturyGothic;
   font-size: 30px;
-  padding: 20px 50px;
+  padding: 20px;
   text-align: center;
   text-transform: uppercase;
   text-rendering: optimizeLegibility;
@@ -109,11 +113,26 @@ body {
 /* Ende Heading CSS */
 
 
+/* ------- Vorstellung und Danksagung CSS ------- */
+.team {
+  font-size: 20px;
+  text-align: center;
+  margin-left: 350px;
+  margin-right: 350px;
+  margin-bottom: 80px;
+}
+/* ----- Ende Vorstellung und Danksagung CSS ----- */
+
 
 /* Team CSS */
   html {
     box-sizing: border-box;
   }
+
+  /* HILFEEE!! Wie mach ich die container alle gleich groß?
+     Also an die Größe des größten Containers angespasst?
+     Link dazu: https://www.w3schools.com/howto/howto_css_equal_height.asp
+     Danke, Moritz. */
 
   *, *:before, *:after {
     box-sizing: inherit;
@@ -180,16 +199,59 @@ body {
   <!-- Banner -->
   <section class="banner" data-description="Banner">
     <div class="wrapper">
-      <h1 class="banner alpha regular double-header-line">FearPong</h1>
+      <h1 class="banner alpha regular double-header-line"
+        href="index.html" style="text-decoration: none;">FearPong</h1>
       <p class="banner beta regular">The future of drinking games</p>
     </div>
-    <a href="index.html" style="text-decoration: none;
-      "margin-left:3ex;">Zurück zum Spiel</a>
+    <a href="index.html" style="text-decoration: none; margin-left:3ex;">
+      Zurück zum Spiel</a>
   </section>
 <!-- Ende Banner -->
 
   <!-- Team -->
-<h1 class="heading">Meet The Team</h1>
+
+<div class="container">
+  <h1 class="heading">Meet The Team</h1>
+  <div class="team">
+    <p>Hey! Wir sind das Entwicklerteam von "fearpong.de" und <br>
+      freuen uns, dass du zu unserer Website gefunden hast und wir dir damit <br>
+      vielleicht sogar einen unvergesslichen FearPong-Abend mit deinen
+      Freunden bescheren konnten.
+    </p>
+    <p>Wenn du dich fragst, wie eine Gruppe aus jungen, gutaussehenden und überaus
+      professionellen Studenten <br>
+      überhaupt auf die Idee kommt, sich zusammen zu schließen und gemeinsam
+      über viele Nächte hinweg eine <br>
+      Website für ein Trinkspiel zu entwickeln, dann pass jetzt auf.
+      Denn das ist unsere Geschichte...
+    </p>
+    <p>
+      Wir studieren alle zusammen Wirtschaftsinformatik im Bachelor an der
+      Uni Leipzig. Jetzt, im mittlerweile zweiten Semester, belegen wir
+      daher auch alle das Modul "Web Techniken", bei dem alle Studenten
+      die Chance haben, gemeinsam ein Web-Projekt zu organisieren und ihre
+      eigene Website zu entwickeln. Bei der Themensuche stand für uns
+      das Interesse aller Studenten immer im Vordergrund. Nichts war uns
+      lieber, als mithilfe unseres Fachwissens die Welt ein Stückchen besser zu
+      machen und möglichst vielen Studenten in schweren Zeiten zur Seite
+      zu stehen. So folgte eins aufs andere und wir entschieden uns
+      für die gemeinsame Entwicklung einer Trinkspiel-Website: FearPong.
+    </p>
+    <p>
+      Wir möchten uns bei all unseren Kommilitonen bedanken, die uns immer
+      beiseite standen und uns ermutigt haben, stets bis ans Äußerste zu gehen.
+      Danke an unseren Dozenten, Sebastian Höfer, der uns die wichtigen Tipps
+      in den richtigen Momenten gegeben hat. Danke an unsere Mütter und Väter,
+      die stolz auf uns sein können und immer an uns geglaubt haben.
+      Und zu guter Letzt: Danke an alle Menschen da draußen, die "FearPong"
+      in all ihre Partynächte mit einbeziehen und es zu dem großartigen
+      Trinkspiel machen, das es ist.
+    </p>
+    <p>
+      Euer "FearPong"-Team
+    </p>
+  </div>
+</div>
 
 <div class="row">
   <div class="column">
@@ -198,8 +260,8 @@ body {
       <div class="container">
         <h2>Jonny</h2>
         <p class="title">Assistant</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-        <p>example@example.com</p>
+        <p>Moin! I bims, da Jooony.</p>
+        <p>jonny@banane.com</p>
         <p><button class="button">Contact</button></p>
       </div>
     </div>
@@ -211,8 +273,8 @@ body {
       <div class="container">
         <h2>Samu</h2>
         <p class="title">Assistant</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-        <p>example@example.com</p>
+        <p>Good Morning, Mr. President!</p>
+        <p>samu@ananas.com</p>
         <p><button class="button">Contact</button></p>
       </div>
     </div>
@@ -224,8 +286,8 @@ body {
       <div class="container">
         <h2>Paulo</h2>
         <p class="title">Assistant</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-        <p>example@example.com</p>
+        <p>Der Mond versinkt, die Sonne lacht, wenn Paulo seine Haare macht.</p>
+        <p>paulo@apfel.com</p>
         <p><button class="button">Contact</button></p>
       </div>
     </div>
@@ -233,17 +295,21 @@ body {
 
   <div class="column">
     <div class="card">
-      <img src="http://placekitten.com/200/100" alt="John" style="width:100%">
+      <img src="http://placekitten.com/200/100" alt="Moritz" style="width:100%">
       <div class="container">
         <h2>Moritz</h2>
         <p class="title">CEO</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-        <p>example@example.com</p>
+        <p>12 Jahre Schule in München, 10 Monate Auslandsaufenthalt in Indien
+          und Amerika und knapp 2 Semester Wirtschaftsinformatik an der
+          Uni Leipzig machten mich zu dem Menschen, der ich jetzt bin:
+          Webentwickler eines Trinkspiels. Mama ist stolz auf mich.</p>
+        <p>moritz@kuerbis.com</p>
         <p><button class="button">Contact</button></p>
       </div>
     </div>
   </div>
 </div>
+
 
 </body>
 </html>
