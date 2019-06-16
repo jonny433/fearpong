@@ -1,15 +1,32 @@
 <!DOCTYPE html>
-
 <html>
   <head>
     <meta charset="utf-8">
     <title>Game</title>
 
+<!-- BITTE CSS SEPARIEREN (Paulo)
+!!!!!!!
+!!!!!!!
+-->
+  <link rel="stylesheet" href="banner.css" media="all">
   <link rel="stylesheet" href="game.css" media="all">
   </head>
+
   <body>
 
   <div class="spielfeld">
+    <!-- Banner -->
+    <section class="banner" data-description="Banner">
+      <div class="wrapper">
+        <h1 class="banner alpha regular double-header-line"
+          href="index.html" style="text-decoration: none;">FearPong</h1>
+        <p class="banner beta regular">The future of drinking games</p>
+      </div>
+      <a href="index.html" style="text-decoration: none; margin-left:3ex;">
+        Zurück zum Spiel</a>
+    </section>
+    <!-- Ende Banner -->
+
 
     <team1>
       <becher id="t10">
@@ -58,6 +75,7 @@
   </div>
   <br>
 <hr>
+  <div class="Aufgabenfeld">
 
   <div id="aufgabenfeld"></div>
 
