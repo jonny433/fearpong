@@ -1,3 +1,7 @@
+//programm beinhalet die logik hinter dem spielfeld
+console.log("game.js geladen...");
+
+//container für alle Fragen
 let questions = [
 "Gib deinem Mitspieler zu deiner rechten einen Kuss",
 "Halte 5 Minuten Händchen mit einer Person deiner Wahl",
@@ -28,23 +32,36 @@ let questions = [
 "Mach einen Bauchtanz für 1 Minute"
 ]
 
+function confirmDare(){
+  if(window.confirm("Willst du eine Aufgabe machen?")) return true
+  else return false;
+}
 
 //unterste Funktion
 function cupClicked(id){
-  let random = Math.floor(Math.random() * questions.length) //0 bis questions.length
-  document.getElementById(id).style.display="none";
-  document.getElementById("aufgabenfeld").innerHTML = questions[random];
-  console.log("Set " + id + " invisible");
+  let choice = confirmDare();
+  if(choice == true){
+    let random = Math.floor(Math.random() * questions.length) //zufällige Zahl 0 bis questions.length
+    document.getElementById("aufgabenfeld").innerHTML = questions[random]; //ändert den text des aufgabenfeldes
+  }
+  else{
+    //document.getElementById(id).style.display="none";
+    document.getElementById(id).style.opacity = 0.2; //setzt den becher transparent
+    console.log("Set " + id + " invisible");
+    document.getElementById("aufgabenfeld").innerHTML = ""; //zurücksetzen des aufgabenfeldes
+  }
 }
 
 
-//eventhandler
+//funktion zum event handeln
 function checkForEvents(id){
   document.getElementById(id).addEventListener("click", function() {
       cupClicked(id);
   }, false);
 }
 
+
+//aufruf der funktion für die verschiedenen becher
 checkForEvents("t10");
 checkForEvents("t11");
 checkForEvents("t12");
