@@ -1,0 +1,89 @@
+body {
+  background-image:
+    linear-gradient(hsla(215,30%,70%,0.9) 0%, hsla(215,30%,70%,0) 50%, hsla(215,30%,70%,0.9) 100%),
+    linear-gradient(to right, hsla(215,30%,80%,0.8) 30%, white 50%, hsla(215,30%,80%,0.8) 70%);
+}
+
+/* Banner CSS */
+
+h1.banner {
+  line-height: 1;
+  margin-top: 0;
+  color: #fff;
+  display: inline-block;
+  position: relative;
+}
+
+p.banner {
+  margin-top: 4rem;
+  color: #fff;
+  font-size: 0.9rem;
+  line-height: 1
+}
+
+/* "FearPong" */
+.alpha {
+  font-size: 5rem;
+  margin-bottom: 0.33rem;
+  font-family: 'Bree Serif';
+}
+
+/* "THE FUTURE OF DRINKING GAMES" */
+.beta {
+  font-size: 1.3333333333333333rem;
+  margin-bottom: 1.2375rem;
+  font-family: 'Oswald';
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+
+.regular{font-weight: 400;}
+
+.double-header-line:before, .double-header-line:after{
+  content: "";
+  display: block;
+  position: absolute;
+  width:7rem;
+  background-color: transparent;
+  height: 4px;
+  border-top: 1px solid #fff;
+  border-bottom:1px solid #fff;
+  top: 50%;
+  margin-bottom: -4px;
+}
+.double-header-line:before{
+  left: -7.5rem;
+}
+.double-header-line:after{
+  right: -7.5rem;
+}
+
+.wrapper{
+  max-width: 53.33rem;
+  margin: 0 auto;
+  position: relative;
+  z-index: 10;
+  transform: translateY(-50%);
+  top:50%;
+  text-align: center;
+}
+
+section {
+  height:240px;
+  margin-left: -8px;
+  margin-right: -8px;
+  margin-top: -8px;
+  background: -webkit-linear-gradient(90deg, #485563 10%, #29323c 90%);
+  background:    -moz-linear-gradient(90deg, #485563 10%, #29323c 90%);
+  background:     -ms-linear-gradient(90deg, #485563 10%, #29323c 90%);
+  background:      -o-linear-gradient(90deg, #485563 10%, #29323c 90%);
+  background:         linear-gradient(90deg, #485563 10%, #29323c 90%);
+}
+
+/* @media screen and (max-width: 650px) {
+  section.banner {
+    height:200px
+  }
+} */
+
+/* Ende Banner CSS */

@@ -1,0 +1,102 @@
+h2,p {
+  font-family: "Century Gothic", CenturyGothic;
+}
+
+/* Heading CSS */
+.heading {
+  font-family: "Century Gothic", CenturyGothic;
+  font-size: 30px;
+  padding: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  text-rendering: optimizeLegibility;
+
+  color: black;
+    letter-spacing: .1em;
+    text-shadow:
+      2px 2px 1px #A4A4A4;
+}
+/* Ende Heading CSS */
+
+
+/* ------- Vorstellung und Danksagung CSS ------- */
+.team {
+  font-size: 16px;
+  text-align: center;
+  margin-left: 16%;
+  margin-right: 16%;
+  /* ...oder 280px, dann aber nicht mehr tauglich als responsive code */
+  margin-bottom: 80px;
+}
+/* ----- Ende Vorstellung und Danksagung CSS ----- */
+
+
+/* Team CSS */
+html {
+  box-sizing: border-box;
+}
+
+/* HILFEEE!! Wie mach ich die container alle gleich groß?
+   Also an die Größe des größten Containers angespasst?
+   Link dazu: https://www.w3schools.com/howto/howto_css_equal_height.asp
+   Danke, Moritz. */
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+    /* ----- Button color (Standard schwarze Farbe: #000;) ----- */
+    background: -webkit-linear-gradient(90deg, #485563 10%, #29323c 90%);
+    background:    -moz-linear-gradient(90deg, #485563 10%, #29323c 90%);
+    background:     -ms-linear-gradient(90deg, #485563 10%, #29323c 90%);
+    background:      -o-linear-gradient(90deg, #485563 10%, #29323c 90%);
+    background:         linear-gradient(90deg, #485563 10%, #29323c 90%);
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+/* Ende Team */
+
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}

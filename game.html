@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html>
   <head>
     <meta charset="utf-8">
@@ -9,64 +8,76 @@
 !!!!!!!
 !!!!!!!
 -->
+  <link rel="stylesheet" href="banner.css" media="all">
   <link rel="stylesheet" href="game.css" media="all">
   </head>
+
   <body>
-  <div class="spielfeld">
+    <!-- Banner -->
+    <section class="banner" data-description="Banner">
+      <div class="wrapper">
+        <h1 class="banner alpha regular double-header-line"
+          href="index.html" style="text-decoration: none;">FearPong</h1>
+        <p class="banner beta regular">The future of drinking games</p>
+      </div>
+      <a href="index.html" style="text-decoration: none; margin-left:3ex;">
+        Zurück zum Spiel</a>
+    </section>
+    <!-- Ende Banner -->
 
+    <div class="spielfeld">
+      <team1>
+        <becher id="t10">
+          </becher>
+        <becher id="t11">
+          </becher>
+        <becher id="t12">
+          </becher>
+        <becher id="t13">
+          </becher>
+        <becher id="t14">
+          </becher>
+        <becher id="t15">
+          </becher>
+        <becher id="t16">
+          </becher>
+        <becher id="t17">
+          </becher>
+        <becher id="t18">
+          </becher>
+        <becher id="t19">
+          </becher>
+      </team1>
+      <team2>
+        <becher id="t20">
+          </becher>
+        <becher id="t21">
+          </becher>
+        <becher id="t22">
+          </becher>
+        <becher id="t23">
+          </becher>
+        <becher id="t24">
+          </becher>
+        <becher id="t25">
+          </becher>
+        <becher id="t26">
+          </becher>
+        <becher id="t27">
+          </becher>
+        <becher id="t28">
+          </becher>
+        <becher id="t29">
+          </becher>
+      </team2>
+    </div>
+    <br>
+  <hr>
+    <div class="Aufgabenfeld">
 
-    <team1>
-      <becher id="t10">
-        </becher>
-      <becher id="t11">
-        </becher>
-      <becher id="t12">
-        </becher>
-      <becher id="t13">
-        </becher>
-      <becher id="t14">
-        </becher>
-      <becher id="t15">
-        </becher>
-      <becher id="t16">
-        </becher>
-      <becher id="t17">
-        </becher>
-      <becher id="t18">
-        </becher>
-      <becher id="t19">
-        </becher>
-    </team1>
-    <team2>
-      <becher id="t20">
-        </becher>
-      <becher id="t21">
-        </becher>
-      <becher id="t22">
-        </becher>
-      <becher id="t23">
-        </becher>
-      <becher id="t24">
-        </becher>
-      <becher id="t25">
-        </becher>
-      <becher id="t26">
-        </becher>
-      <becher id="t27">
-        </becher>
-      <becher id="t28">
-        </becher>
-      <becher id="t29">
-        </becher>
-    </team2>
-  </div>
-  <br>
-<hr>
-  <div class="Aufgabenfeld">
+    <textarea id="aufgabenfeld"></textarea>
 
-  <textarea id="aufgabenfeld"></textarea>
-
-    <script src="game.js"></script>
-  </div>
+      <script src="game.js"></script>
+    </div>
   </body>
 </html>
