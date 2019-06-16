@@ -7,7 +7,7 @@ let questions = [
 "Halte 5 Minuten Händchen mit einer Person deiner Wahl",
 "Benimm dich zwei Minuten wie ein Huhn",
 "Tausche die Klamotten mit dem Mitspieler rechts von dir",
-"Erzähle der Person gegenüber, was seine Vorzüge und Macken sind",
+"Erzähle der Person gegenüber, was seine Vorzüge sind",
 "Imitiere ein Tier deiner Wahl",
 "Mach dich im Spiegel selbst an",
 "Spiele Dieter Bohlen und gib für 2 Runden zu allem Kommentare ab",
@@ -24,12 +24,17 @@ let questions = [
 "Sprich die nächsten 3 Minuten in Babysprache",
 "Lecke einen Gegenstand in Greifnähe ab",
 "Laufe einmal um die Gruppe herum und belle wie ein Hund",
-"Ziehe ein Kleidungsstück aus; Alle anderen müssen es auch ausziehen",
+"Ziehe ein Kleidungsstück aus. Alle anderen müssen es auch ausziehen",
 "Versuche, für 10 Sekunden zu breakdancen",
-"Mache die lustigste Grimasse, die dir einfällt",
 "Spiele eine Sterbeszene",
 "Zeig allen, wie der Moonwalk von Michael Jackson geht",
-"Mach einen Bauchtanz für 1 Minute"
+"Mach einen Bauchtanz für 1 Minute",
+"Sei bis zum nächsten Treffer der Dorfälteste und sprich jeden mit \"Mein Sohn\" an",
+"Erkläre der Person links von dir, warum du eine Bestrafung verdienst",
+"Tu so, als hättest du eine gespaltene Persönlichkeit und streite mit dir selbst",
+"Imitiere die Person mit den bisher meisten Treffern",
+"Schließe die Augen und errate das Körperteil einer demokratisch gewählten Person mit deiner Hand",
+"Zeit zu strippen! Für jedes ausgezogene Kleidungsstück gibt's nen extra Versuch beim Werfen"
 ]
 
 let alreadyClicked = [false, false, false, false, false, false, false, false, false, false,
