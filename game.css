@@ -86,91 +86,91 @@ becher:hover{
 /***********************************/
 
 /***********************************/
-.t10{
+#t10{
   top: var(--anfang, 10px);
   left: var(--anfang, 10px);
 }
-.t11{
+#t11{
   top: calc(var(--anfang) + var(--abstand) + var(--groesse)); /*65*/
   left: var(--anfang); /*10*/
 }
-.t12{
+#t12{
   top: calc(var(--anfang) + 2*var(--abstand) + 2*var(--groesse)); /*120*/
   left: var(--anfang);
 }
-.t13{
+#t13{
   top: calc(var(--anfang) + 3*var(--abstand) + 3*var(--groesse)); /*175*/
   left: var(--anfang);
 }
 /***********************************/
-.t14{
+#t14{
   top: calc(var(--anfang) + var(--abstand)/2 + var(--groesse)/2); /*37.5*/
   left: calc(var(--anfang) + var(--abstand) + var(--groesse)); /*65*/
 }
-.t15{
+#t15{
   top: calc(var(--anfang) + var(--abstand) * 1.5 + var(--groesse) * 1.5); /*92.5*/
   left: calc(var(--anfang) + var(--abstand) + var(--groesse));
 }
-.t16{
+#t16{
   top: calc(var(--anfang) + var(--abstand) * 2.5 + var(--groesse) * 2.5); /*147.5*/
   left: calc(var(--anfang) + var(--abstand) + var(--groesse));
 }
 /***********************************/
-.t17{
+#t17{
   top: calc(var(--anfang) + var(--abstand) + var(--groesse)); /*65*/
   left: calc(var(--anfang) + 2*var(--abstand) + 2*var(--groesse)); /*120*/
 }
-.t18{
+#t18{
   top: calc(var(--anfang) + 2*var(--abstand) + 2*var(--groesse)); /*120*/
   left: calc(var(--anfang) + 2*var(--abstand) + 2*var(--groesse));
 }
 /***********************************/
-.t19{
+#t19{
   top: calc(var(--anfang) + var(--abstand) * 1.5 + var(--groesse) * 1.5); /*92.5*/
   left: calc(var(--anfang) + 3*var(--abstand) + 3*var(--groesse)); /*175*/
 }
 /***********************************/
 /***********************************/
-.t20{
+#t20{
   top: calc(var(--anfang) + var(--abstand) * 1.5 + var(--groesse) * 1.5); /*92.5*/
   left: calc(var(--anfang) + 3*var(--abstand) + 3*var(--groesse) + var(--teamabstand)); /*300*/
 }
 /***********************************/
-.t21{
+#t21{
   top: calc(var(--anfang) + var(--abstand) + var(--groesse)); /*65*/
   left: calc(var(--anfang) + 4*var(--abstand) + 4*var(--groesse) + var(--teamabstand)); /*355*/
 }
-.t22{
+#t22{
   top: calc(var(--anfang) + 2*var(--abstand) + 2*var(--groesse)); /*120*/
   left: calc(var(--anfang) + 4*var(--abstand) + 4*var(--groesse) + var(--teamabstand));
 }
 /***********************************/
-.t23{
+#t23{
   top: calc(var(--anfang) + var(--abstand)/2 + var(--groesse)/2); /*37.5*/
   left: calc(var(--anfang) + 5*var(--abstand) + 5*var(--groesse) + var(--teamabstand));/*410*/
 }
-.t24{
+#t24{
   top: calc(var(--anfang) + var(--abstand) * 1.5 + var(--groesse) * 1.5); /*92.5*/
   left: calc(var(--anfang) + 5*var(--abstand) + 5*var(--groesse) + var(--teamabstand));
 }
-.t25{
+#t25{
   top: calc(var(--anfang) + var(--abstand) * 2.5 + var(--groesse) * 2.5); /*147.5*/
   left: calc(var(--anfang) + 5*var(--abstand) + 5*var(--groesse) + var(--teamabstand));
 }
 /***********************************/
-.t26{
+#t26{
   top: var(--anfang, 10px);
   left: calc(var(--anfang) + 6*var(--abstand) + 6*var(--groesse) + var(--teamabstand)); /*465*/
 }
-.t27{
+#t27{
   top: calc(var(--anfang) + var(--abstand) + var(--groesse)); /*65*/
   left: calc(var(--anfang) + 6*var(--abstand) + 6*var(--groesse) + var(--teamabstand));
 }
-.t28{
+#t28{
   top: calc(var(--anfang) + 2*var(--abstand) + 2*var(--groesse)); /*120*/
   left: calc(var(--anfang) + 6*var(--abstand) + 6*var(--groesse) + var(--teamabstand));
 }
-.t29{
+#t29{
   top: calc(var(--anfang) + 3*var(--abstand) + 3*var(--groesse)); /*175*/
   left: calc(var(--anfang) + 6*var(--abstand) + 6*var(--groesse) + var(--teamabstand));
 }

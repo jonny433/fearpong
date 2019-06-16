@@ -16,47 +16,47 @@
 
 
     <team1>
-      <becher class="t10">
+      <becher id="t10">
         </becher>
-      <becher class="t11">
+      <becher id="t11">
         </becher>
-      <becher class="t12">
+      <becher id="t12">
         </becher>
-      <becher class="t13">
+      <becher id="t13">
         </becher>
-      <becher class="t14">
+      <becher id="t14">
         </becher>
-      <becher class="t15">
+      <becher id="t15">
         </becher>
-      <becher class="t16">
+      <becher id="t16">
         </becher>
-      <becher class="t17">
+      <becher id="t17">
         </becher>
-      <becher class="t18">
+      <becher id="t18">
         </becher>
-      <becher class="t19">
+      <becher id="t19">
         </becher>
     </team1>
     <team2>
-      <becher class="t20">
+      <becher id="t20">
         </becher>
-      <becher class="t21">
+      <becher id="t21">
         </becher>
-      <becher class="t22">
+      <becher id="t22">
         </becher>
-      <becher class="t23">
+      <becher id="t23">
         </becher>
-      <becher class="t24">
+      <becher id="t24">
         </becher>
-      <becher class="t25">
+      <becher id="t25">
         </becher>
-      <becher class="t26">
+      <becher id="t26">
         </becher>
-      <becher class="t27">
+      <becher id="t27">
         </becher>
-      <becher class="t28">
+      <becher id="t28">
         </becher>
-      <becher class="t29">
+      <becher id="t29">
         </becher>
     </team2>
   </div>
@@ -64,31 +64,9 @@
 <hr>
   <div class="Aufgabenfeld">
 
-<!-- wenn du möchtest jonny, kannst du gerne das css dazu machen :) -->
   <textarea id="aufgabenfeld"></textarea>
-  <input type="file" id="fileReader"/>
 
-    <!-- Code wurde am Ende eingebunden, damit sicher gestellt werden kann, dass alle html tags auch vollständig geladen sind -->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <script type="text/javascript">
-    let data = [];
-
-    const input = document.getElementById('fileReader')
-    input.addEventListener('change', function(e){
-      console.log(input.files)
-      const reader = new FileReader()
-      reader.onload = function (){
-        data = reader.result;
-        document.getElementById("aufgabenfeld").innerHTML = reader.result;
-      }
-      reader.readAsText(input.files[0])
-    }, false)
-
-    function changeText(){
-
-    }
-
-    </script>
+    <script src="game.js"></script>
   </div>
   </body>
 </html>
