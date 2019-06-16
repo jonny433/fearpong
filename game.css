@@ -30,8 +30,16 @@ body{
   margin: auto;/*auto*/
   padding: 4px; /*4*/
 }
-.Aufgabenfeld{
-
+#aufgabenfeld{
+  background: white;
+  font-size:3vw;
+  margin: auto;
+  width: 60%;
+  height: calc(var(--anfang) + 1*var(--abstand) + 1*var(--groesse));/*230*/
+  border: 1px solid #ccc;
+  border-radius: 10px; /*10*/
+  margin: auto;/*auto*/
+  padding: 4px; /*4*/
 }
 
 team1 > becher{

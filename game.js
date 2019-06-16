@@ -28,11 +28,17 @@ let questions = [
 "Mach einen Bauchtanz für 1 Minute"
 ]
 
+
+//unterste Funktion
 function cupClicked(id){
+  let random = Math.floor(Math.random() * questions.length) //0 bis questions.length
   document.getElementById(id).style.display="none";
+  document.getElementById("aufgabenfeld").innerHTML = questions[random];
   console.log("Set " + id + " invisible");
 }
 
+
+//eventhandler
 function checkForEvents(id){
   document.getElementById(id).addEventListener("click", function() {
       cupClicked(id);
