@@ -33,6 +33,7 @@ body{
 #aufgabenfeld{
   background: white;
   font-size:3vw;
+  text-align: center;
   margin: auto;
   width: 60%;
   height: calc(var(--anfang) + 1*var(--abstand) + 1*var(--groesse));/*230*/
@@ -44,6 +45,7 @@ body{
 
 team1 > becher{
   background-color: #1E88E5;
+
 }
 team2 > becher{
   background-color: #E53935;
@@ -52,7 +54,7 @@ becher{
 position: absolute;
 width: var(--groesse, 50px);
 height: var(--groesse, 50px);
-border: 1px solid black;
+border: 2px solid gold;
 border-radius: 100%;
 opacity: 0.7;
 box-shadow: 6px 6px 6px;
