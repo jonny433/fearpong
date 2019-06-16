@@ -2,7 +2,7 @@
   background-image:
     linear-gradient(hsla(215,30%,70%,0.9) 0%, hsla(215,30%,70%,0) 50%, hsla(215,30%,70%,0.9) 100%),
     linear-gradient(to right, hsla(215,30%,80%,0.8) 30%, white 50%, hsla(215,30%,80%,0.8) 70%);
-} sorry aber das geht gar nicht (Paulo)*/ 
+} sorry aber das geht gar nicht (Paulo)*/
 
 /* Banner CSS */
 #homeLink {
@@ -73,7 +73,7 @@ p.banner {
 }
 
 section {
-  height:240px;
+  height:220px;
   margin-left: -8px;
   margin-right: -8px;
   margin-top: -8px;
