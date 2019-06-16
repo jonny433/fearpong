@@ -1,0 +1,45 @@
+#homeLink {
+	text-decoration: none;
+	color: #fff;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+
+h1{
+	text-align: center;
+	color: rgb(35, 98, 139);
+	font-size: 3rem;
+	font-family: 'Bree Serif';
+}
+
+h2{
+	text-align: center;
+	color: rgb(35, 98, 139);
+	font-size: 2rem;
+	font-family: 'Bree Serif';
+}
+
+
+.image{
+	width:100%;
+	opacity: 1;
+}
+
+.containerChill:hover #chiller {
+  opacity: 0.3;
+}
+
+.containerStandard:hover #standard {
+  opacity: 0.3;
+}
+
+.containerSexy:hover #sexy {
+  opacity: 0.3;
+}

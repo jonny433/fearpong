@@ -1,11 +1,82 @@
+<!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <title>Spielmodus wählen</title>
+    <meta charset="utf-8">
+	<title>Spielmodus wählen</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="banner.css" media="all">
+	<link rel="stylesheet" href="spielmodus.css" media="all">
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <script src="sidebar.js"></script>  
 </head>
+
 <body>
-<h1>Under construction <h1>
-<p>Hier kannst du den Spielmodus auswählen</p>
+  <!-- Banner -->
+  <section class="banner" data-description="Banner">
+    <div class="wrapper">
+      <h1 class="banner alpha regular double-header-line"><a id="homeLink" href="index.html">FearPong</a></h1>
+      <p class="banner beta regular">The future of drinking games</p>
+    </div>
+  </section>
+  <!-- Ende Banner -->
+  <h1>Spielmodus wählen</h1>
+  
+  <div class="row">
+  <div class="column">
+  	<h2>Chiller-Modus</h2>
+  	<div class="containerChill">
+  		<a href="#">
+    		<img src="https://images.unsplash.com/photo-1436076863939-06870fe779c2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" alt="Chiller-Modus" id="chiller" class="image">
+		</a>
+	</div>
+	<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+  </div>
+  
+  <div class="column">
+  	<h2>Standard-Modus</h2>
+  	<div class="containerStandard">
+  		<a href="gameStandard.html">
+    		<img src="https://www.belushis.com/__data/assets/image/0006/497661/beer-pong-compressor.jpg" alt="Standard-Modus" id="standard" class="image">
+		</a>
+	</div>
+	<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+  </div>
+  
+  <div class="column">
+  	<h2>Sexy-Modus</h2>
+  	<div class="containerSexy">
+  		<a href="#">
+    		<img src="https://www.organicauthority.com/.image/t_share/MTU5MzI5OTAzODMzNzIwNDE2/image-placeholder-title.jpg" alt="Sexy-Modus" id="sexy" class="image">
+		</a>
+	</div>
+	<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+  </div>
+
+</div>
+
+  <!-- --------------Menü Anfang ------------------->
+  <!-- Menü aufklapp button -->
+  <div class="toggle-btn" onclick="togglemenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <!-- Eigentliches menü -->
+    <div id ="sidebar" >
+        <!-- Menü schliess button -->
+        <div class = "closebtn" onclick="closemenu()">
+          &times;
+        </div>
+
+      <!-- Liste mit Links zu den einzelnen Seiten -->
+      <ul>
+        <li> <a href="spielmodus.html">Spiel</a></li>
+        <li> <a href="aufgaben.html">Aufgaben</a></li>
+        <li> <a href="spielregeln.html">Spielregeln</a></li>
+        <li> <a href="team.html">Meet The Team</a></li>
+        </ul>
+    </div>
+    <!-- -----------Ende Menü------------ -->
 
 
 

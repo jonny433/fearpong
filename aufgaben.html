@@ -3,20 +3,43 @@
 
 <head>
   <link rel="stylesheet" href="banner.css" media="all">
+  <script src="sidebar.js"></script>
+  <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 
 <body>
   <!-- Banner -->
   <section class="banner" data-description="Banner">
     <div class="wrapper">
-      <h1 class="banner alpha regular double-header-line"
-        href="index.html" style="text-decoration: none;">FearPong</h1>
+      <h1 class="banner alpha regular double-header-line"><a id="homeLink" href="index.html">FearPong</a></h1>
       <p class="banner beta regular">The future of drinking games</p>
     </div>
-    <a href="index.html" style="text-decoration: none; margin-left:3ex;">
-      Zurück zum Spiel</a>
   </section>
   <!-- Ende Banner -->
+
+    <!-- --------------Menü Anfang ------------------->
+  <!-- Menü aufklapp button -->
+  <div class="toggle-btn" onclick="togglemenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <!-- Eigentliches menü -->
+    <div id ="sidebar" >
+        <!-- Menü schliess button -->
+        <div class = "closebtn" onclick="closemenu()">
+          &times;
+        </div>
+
+      <!-- Liste mit Links zu den einzelnen Seiten -->
+      <ul>
+        <li> <a href="spielmodus.html">Spiel</a></li>
+        <li> <a href="aufgaben.html">Aufgaben</a></li>
+        <li> <a href="spielregeln.html">Spielregeln</a></li>
+        <li> <a href="team.html">Meet The Team</a></li>
+        </ul>
+    </div>
+    <!-- -----------Ende Menü------------ -->
 </body>
 
 </html>
