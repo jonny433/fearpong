@@ -1,0 +1,77 @@
+<style>
+  .spielregelnUeberschrift{
+    font-size: 40px;
+    background-color: green;
+    text-decoration: underline;
+  }
+  p{
+    padding: 1em;
+  }
+  a{
+    text-decoration: none;
+    color: black;
+  }
+  a:hover{
+    color: blue;
+  }
+  li {
+    margin-top: 50px;
+  }
+  li p{
+    padding-bottom: 0px;
+    margin: 0px;
+  }
+  body{
+    background-image:
+      linear-gradient(hsla(215,30%,70%,0.9) 0%, hsla(215,30%,70%,0) 50%, hsla(215,30%,70%,0.9) 100%),
+      linear-gradient(to right, hsla(215,30%,80%,0.8) 30%, white 50%, hsla(215,30%,80%,0.8) 70%);
+}
+  main{
+    margin-left: 20px;
+  }
+
+/*****************sidebar*******************************************/
+/*
+  #sidebar {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: -100%;
+    background-color: #f1f1f1;
+  }
+
+  #sidebar li a {
+    display: block;
+    color: black;
+    font-size: 380%;
+    padding: 30px;
+    text-align: center;
+    text-decoration: none;
+  }
+  /* Link farbe
+  #sidebar li a:hover {
+    background-color: #555;
+    color: white;
+  }
+  /* der Menü-Button
+  .toggle-btn{
+    cursor: pointer;
+    position: absolute;
+    left: 105%;
+    top: 15px;
+  }
+  /*die bestandteile des Menü-Buttons (Gitter)
+  .toggle-btn span{
+    display: block;
+    background-color: black;
+    width: 30px;
+    height: 5px;
+    margin: 3px;
+
+  }
+  /* zeigt sidebar im aktiven Zustand (wenn menübutton geklickt)
+  sidebar.active{
+    left: 0;
+  }
+/*****************sidebar*ende**************************************/
+</style>
