@@ -45,6 +45,10 @@ html {
   box-sizing: inherit;
 }
 
+.row {
+  overflow: hidden;
+}
+
 .column {
   float: left;
   width: 25%;
@@ -54,6 +58,7 @@ html {
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  height: 620px;
 }
 
 .container {
@@ -75,6 +80,7 @@ html {
   outline: 0;
   display: inline-block;
   padding: 8px;
+  margin-bottom: 16px;
   color: white;
     /* ----- Button color (Standard schwarze Farbe: #000;) ----- */
     background: -webkit-linear-gradient(90deg, #485563 10%, #29323c 90%);
@@ -90,6 +96,7 @@ html {
 .button:hover {
   background-color: #555;
 }
+
 /* Ende Team */
 
 }
@@ -98,5 +105,9 @@ html {
   .column {
     width: 100%;
     display: block;
+  }
+  .card {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
   }
 }
