@@ -29,6 +29,7 @@ body{
   border-radius: 10px; /*10*/
   margin: auto;/*auto*/
   padding: 4px; /*4*/
+  margin-top: 20px;
 }
 #aufgabenfeld{
   background: white;

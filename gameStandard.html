@@ -6,8 +6,44 @@
     <title>Game</title>
 
   <link rel="stylesheet" href="game.css" media="all">
+  <link rel="stylesheet" href="banner.css" media ="all">
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <script src="sidebar.js"></script>
   </head>
   <body>
+
+    <!-- Banner -->
+    <section class="banner" data-description="Banner">
+      <div class="wrapper">
+        <h1 class="banner alpha regular double-header-line"><a id="homeLink" href="index.html">FearPong</a></h1>
+        <p class="banner beta regular">The future of drinking games</p>
+      </div>
+    </section>
+    <!-- Ende Banner -->
+
+    <!-- --------------Menü Anfang ------------------->
+    <!-- Menü aufklapp button -->
+    <div class="toggle-btn" onclick="togglemenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <!-- Eigentliches menü -->
+      <div id ="sidebar" >
+          <!-- Menü schliess button -->
+          <div class = "closebtn" onclick="closemenu()">
+            &times;
+          </div>
+
+        <!-- Liste mit Links zu den einzelnen Seiten -->
+        <ul>
+          <li> <a href="spielmodus.html">Spiel</a></li>
+          <li> <a href="aufgaben.html">Aufgaben</a></li>
+          <li> <a href="spielregeln.html">Spielregeln</a></li>
+          <li> <a href="team.html">Meet The Team</a></li>
+          </ul>
+      </div>
+      <!-- -----------Ende Menü------------ -->
 
   <div class="spielfeld">
 
