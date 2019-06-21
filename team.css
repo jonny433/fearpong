@@ -2,23 +2,6 @@ h2,p {
   font-family: "Century Gothic", CenturyGothic;
 }
 
-/* Heading CSS */
-.heading {
-  font-family: "Century Gothic", CenturyGothic;
-  font-size: 30px;
-  padding: 20px;
-  text-align: center;
-  text-transform: uppercase;
-  text-rendering: optimizeLegibility;
-
-  color: black;
-    letter-spacing: .1em;
-    text-shadow:
-      2px 2px 1px #A4A4A4;
-}
-/* Ende Heading CSS */
-
-
 /* ------- Vorstellung und Danksagung CSS ------- */
 .team {
   font-size: 16px;
@@ -76,6 +59,7 @@ html {
 }
 
 .button {
+  margin-bottom: 0px;
   border: none;
   outline: 0;
   display: inline-block;

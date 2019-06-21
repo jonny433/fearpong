@@ -1,8 +1,13 @@
 <style>
-  .spielregelnUeberschrift{
+  h3 /*spielRegelnUeberschrift*/ {
     font-size: 40px;
+    font-weight: bold;
     background-color: green;
     text-decoration: underline;
+  }
+  h2 {
+    padding-top: 40px;
+    padding-bottom: 20px;
   }
   p{
     padding: 1em;
