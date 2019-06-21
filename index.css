@@ -29,7 +29,7 @@ body {
   background-color: transparent;
 }
     /* Menü Punkte */
-    #sidebar li a {
+    #sidebar li a, #sidebarLine {
       display: block;
       color: white;
       font-size: 380%;
@@ -68,3 +68,19 @@ body {
   margin: 3px;
 }
 /* ----------- Ende Menü  CSS ----------- */
+
+/* Heading CSS */
+.heading {
+  font-family: "Century Gothic", CenturyGothic;
+  font-size: 30px;
+  padding: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  text-rendering: optimizeLegibility;
+
+  color: black;
+    letter-spacing: .1em;
+    text-shadow:
+      2px 2px 1px #A4A4A4;
+}
+/* Ende Heading CSS */
