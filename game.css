@@ -63,14 +63,27 @@ box-shadow: 6px 6px 6px;
 erkennt er die normalen root Variablen nicht mehr und haut alles aufeinander*/
 /*Eine überlegung wäre es noch, dass wenn der Bildschirm ganz klein wird das man das spielfeld dreht für
 Handy nutzer*/
-@media(min-width: 10px) {
+@media(max-width: 1000px) {
   :root{
     --groesse: 50px; /*50*/
-    --anfang: 10px; /*10*/
+    --anfang: 160px; /*10*/
     --abstand: 5px; /*5*/
-    --teamabstand: 125px; /*125*/
+    --teamabstand: 100px; /*125*/
+  }
+  .spielfeld{
+    transform: rotate(90deg);
+    border: 0px;
+  }
+  becher{
+    box-shadow: 6px -2px 6px;
+  }
+  #aufgabenfeld{
+    position: relative;
+    top:  130px;
+    height: calc(1*var(--abstand) + 1*var(--groesse));/*230*/
   }
 }
+
 @media(min-width: 1000px){
   :root{
     --groesse: 100px; /*100*/
