@@ -1,5 +1,5 @@
 /*Standard für alle Elemente*/
-*{
+#sidebar *{
   margin: 0;
   padding: 0;
 }
@@ -18,14 +18,20 @@ body {
   width: 100%;
   height: 100%;
   top: -100%;
-  background-color: #f1f1f1;
+  left: -0.0001%;
+  background: -webkit-linear-gradient(90deg, #485563 10%, #29323c 90%);
+  background:    -moz-linear-gradient(90deg, #485563 10%, #29323c 90%);
+  background:     -ms-linear-gradient(90deg, #485563 10%, #29323c 90%);
+  background:      -o-linear-gradient(90deg, #485563 10%, #29323c 90%);
+  background:         linear-gradient(90deg, #485563 10%, #29323c 90%);
   z-index: 1;
-  transition: 0.5s;
+  transition: 0.6s;
+  background-color: transparent;
 }
     /* Menü Punkte */
-    #sidebar li a {
+    #sidebar li a, #sidebarLine {
       display: block;
-      color: black;
+      color: white;
       font-size: 380%;
       padding: 30px;
       text-align: center;
@@ -34,7 +40,7 @@ body {
     /*Menü Link  farbe wechseln beim drübergehen */
     #sidebar li a:hover {
       background-color: #555;
-      color: white;
+      color: black;
     }
     /* schliess button */
     #sidebar .closebtn {
@@ -62,3 +68,19 @@ body {
   margin: 3px;
 }
 /* ----------- Ende Menü  CSS ----------- */
+
+/* Heading CSS */
+.heading {
+  font-family: "Century Gothic", CenturyGothic;
+  font-size: 30px;
+  padding: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  text-rendering: optimizeLegibility;
+
+  color: black;
+    letter-spacing: .1em;
+    text-shadow:
+      2px 2px 1px #A4A4A4;
+}
+/* Ende Heading CSS */

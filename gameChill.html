@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Game</title>
+  <link rel="stylesheet" href="banner.css" media="all">
+  <link rel="stylesheet" href="gameChill.css" media="all">
+  <link rel="stylesheet" href="index.css" media="all">
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <script src="sidebar.js"></script>
+</head>
+
+<body>
+
+  <!-- Banner -->
+  <section class="banner" data-description="Banner">
+    <div class="wrapper">
+      <h1 class="banner alpha regular double-header-line"><a id="homeLink" href="spielmodus.html">FearPong</a></h1>
+      <p class="banner beta regular">The future of drinking games</p>
+    </div>
+  </section>
+  <!-- Ende Banner -->
+
+  <!-- --------------Menü Anfang ------------------->
+  <!-- Menü aufklapp button -->
+  <div class="toggle-btn" onclick="togglemenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <!-- Eigentliches menü -->
+    <div id ="sidebar" >
+        <!-- Menü schliess button -->
+        <div class = "closebtn" onclick="closemenu()">
+          &times;
+        </div>
+
+      <!-- Liste mit Links zu den einzelnen Seiten -->
+      <ul>
+        <li id="sidebarLine">_____________________________________________</li>
+        <li> <a href="spielmodus.html">Spiel</a></li>
+        <li> <a href="spielregeln.html">Spielregeln</a></li>
+        <li> <a href="team.html">Meet The Team</a></li>
+        </ul>
+    </div>
+    <!-- -----------Ende Menü------------ -->
+
+
+  <div>
+    <p>Ey du. So nen "Chiller-Modus" gibt's hier bei uns nicht...<br>
+      Bitte wähle einen anderen Modus.
+    </p>
+    <a href="spielmodus.html">
+      <button class="button" href="spielmodus.html">Hier geht's zurück zur Auswahl</button>
+    </a>
+  </div>
+
+</body>
+</html>
