@@ -4,7 +4,7 @@ div {
 }
 
 /* Schrift CSS */
-p {
+div.container p {
   font-family: "Century Gothic", CenturyGothic;
   font-size: 30px;
   padding: 20px;
@@ -30,7 +30,7 @@ p {
 
 .button {
   margin-top: 3%;
-  border-radius: 5%;
+  border-radius: 2%;
   border: none;
   outline: 0;
   padding: 10px 20px 10px 20px;

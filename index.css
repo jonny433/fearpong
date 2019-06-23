@@ -85,3 +85,14 @@ body {
       2px 2px 1px #A4A4A4;
 }
 /* Ende Heading CSS */
+
+#impressum {
+  text-align: center;
+  font-style: italic;
+  color: black;
+  margin-top: 20px;
+}
+
+#imp h1 {
+  text-align: center;
+}
