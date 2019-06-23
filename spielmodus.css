@@ -16,20 +16,38 @@ h1{
 	text-align: center;
 	color: rgb(35, 98, 139);
 	font-size: 3rem;
-	font-family: 'Bree Serif';
+	font-family: Arial;
 }
 
 h2{
 	text-align: center;
 	color: rgb(35, 98, 139);
 	font-size: 2rem;
-	font-family: 'Bree Serif';
+	font-family: Arial;
 }
 
+p {
+	font-family: Arial;
+  font-size: 16px;
+  padding-left: 10px;
+	padding-right: 10px;
+  text-rendering: optimizeLegibility;
+  color: black;
+}
 
 .image{
 	width:100%;
 	opacity: 1;
+}
+
+.column {
+	float: left;
+  width: 25%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+	margin: 5px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  height: 750px;
 }
 
 .containerChill:hover #chiller {
