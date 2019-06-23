@@ -38,6 +38,7 @@ p.banner {
   margin-bottom: 1.2375rem;
   font-family: 'Oswald';
   letter-spacing: 8px;
+  text-align: center !important;
   text-transform: uppercase;
 }
 

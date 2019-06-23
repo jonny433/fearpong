@@ -37,7 +37,7 @@ body{
   text-align: center;
   margin: auto;
   width: 60%;
-  height: calc(var(--anfang) + 1*var(--abstand) + 1*var(--groesse));/*230*/
+  height: calc(var(--anfang) + 1*var(--abstand) + 1*var(--groesse)) + 1px;/*230*/
   border: 1px solid #ccc;
   border-radius: 10px; /*10*/
   margin: auto;/*auto*/

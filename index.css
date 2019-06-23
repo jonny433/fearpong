@@ -41,6 +41,7 @@ body {
     #sidebar li a:hover {
       background-color: #555;
       color: black;
+      text-transform: capitalize !important;
     }
     /* schliess button */
     #sidebar .closebtn {
