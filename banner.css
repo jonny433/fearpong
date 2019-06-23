@@ -16,13 +16,22 @@ h1.banner {
   color: #fff;
   display: inline-block;
   position: relative;
+
+  /* Für Schatten zuständig falls gewünscht...
+  
+  text-rendering: optimizeLegibility;
+  color: black;
+    letter-spacing: .1em;
+    text-shadow:
+      2px 2px 1px #A4A4A4;
+  */
 }
 
 p.banner {
   margin-top: 4rem;
   color: #fff;
   font-size: 0.9rem;
-  line-height: 1
+  line-height: 1;
 }
 
 /* "FearPong" */
