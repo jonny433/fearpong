@@ -1,7 +1,4 @@
 <style>
-:root{
-  --
-}
 body{
   background-image:
     linear-gradient(hsla(215,30%,70%,0.9) 0%, hsla(215,30%,70%,0) 50%, hsla(215,30%,70%,0.9) 100%),
@@ -36,14 +33,17 @@ body{
     }
   a:hover{
       color: blue;
+<<<<<<< HEAD
       font-size: 17px;
+=======
+>>>>>>> master
       text-transform: uppercase;
     }
   .container{
-      border: 1px solid black;
+      border: 1px solid #666;
       border-radius: 10px; /*10*/
       margin: 10px;
-      box-shadow: 2px 2px 2px;
+      box-shadow: 2px 2px 2px #888;
     }
   .container1{
       border: 1px solid black;
