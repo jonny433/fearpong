@@ -18,13 +18,17 @@ h1.banner {
   position: relative;
 
   /* Für Schatten zuständig falls gewünscht...
-  
+
   text-rendering: optimizeLegibility;
   color: black;
     letter-spacing: .1em;
     text-shadow:
       2px 2px 1px #A4A4A4;
   */
+}
+
+#homeLink {
+  text-transform: capitalize;
 }
 
 p.banner {
