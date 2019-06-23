@@ -20,6 +20,11 @@ body{
         text-shadow:
           2px 2px 1px #A4A4A4;
     }
+
+  h1, h2, h3, p, a, li {
+    font-family: arial;
+  }
+
   h2{
       margin: 30px;
       font-size: 28px;
@@ -44,6 +49,7 @@ body{
       color: blue;
 <<<<<<< HEAD
       font-size: 17px;
+      text-transform: uppercase;
 =======
 >>>>>>> master
       text-transform: uppercase;

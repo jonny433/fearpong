@@ -3,8 +3,6 @@ console.log("game.js geladen...");
 
 //container für alle Fragen
 let questionsSexy = [
-  "Berichte von deinem peinlichsten (oder heißesten) Sex-Erlebnis – und lass keine Details aus",
-  "Trinkt aus dem Bauchnabel eines Mitspielers",
   "Lass dir einen Knutschfleck verpassen",
   "Tausche dein Oberteil mit dem Spieler rechts von dir",
   "Versuche mit verbundenen Augen durch Abtasten einen demokratisch gewählten Mitspieler zu erraten",
@@ -21,7 +19,9 @@ let questionsSexy = [
   "Entscheidet demokratisch, welche Person des anderen Geschlechts am besten küssen kann. Prove it!",
   "Alle Spieler entscheiden sich demokratisch für ein Kleidungsstück, dass du ausziehen musst",
   "Zeit für ein Knutschduell! Du und ein Mitspieler vs. 2 Spieler aus dem anderen Team. Alle anderen stimmen über den Gewinner ab",
-  "Wähle einen Kuss-Mate für jeden Treffer, den du ab sofort landest"
+  "Wähle einen Kuss-Mate für jeden Treffer, den du ab sofort landest",
+  "Berichte von deinem peinlichsten (oder heißesten) Sex-Erlebnis und lass keine Details aus",
+  "Trinke aus dem Bauchnabel eines Mitspielers"
 ]
 
 let alreadyClicked = [false, false, false, false, false, false, false, false, false, false,

@@ -86,13 +86,48 @@ body {
 }
 /* Ende Heading CSS */
 
+/* Alle Buttons */
+.button:hover {
+  opacity: 0.7;
+}
+
 #impressum {
   text-align: center;
   font-style: italic;
   color: black;
   margin-top: 20px;
+  text-transform: capitalize;
 }
 
-#imp h1 {
+.impressum h1 {
   text-align: center;
 }
+
+.impressum column {
+  width: 80%;
+  margin-bottom: 100px;
+  padding: 50px 100px 50px 100px;
+  text-align: left;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  height: 620px;
+
+  content: "";
+  clear: both;
+  display: table;
+}
+/* TeamBild...
+img.teamBild {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5%;
+}
+der HTML-Code dazu:
+<img src="Team-fearpong.jpg" alt="DasTeam" class="teamBild" style="width:50%">
+*/
