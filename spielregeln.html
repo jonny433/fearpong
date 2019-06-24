@@ -4,6 +4,7 @@
     <link rel="stylesheet" href="banner.css" media="all">
     <link rel="stylesheet" type="text/css" href="index.css">
     <script src="sidebar.js"></script>
+    <script src="spielregeln.js"></script>
     <link rel="stylesheet" href="spielregeln.css" media="all">
 
 
@@ -32,13 +33,13 @@
     <div class="container1">
       <h2> Schnelleinstieg </h2>
         <ul>
-          <li><a href="#erstes" class="internalink">Jeder Spieler eines Teams wirft je einen Ball</a></li>
-          <li><a href="#zweites" class="internalink">Bälle die aufsetzen, dürfen abgewehrt werden</a></li>
-          <li><a href="#drittes" class="internalink">Getroffene Becher müssen ausgetrunken werden oder <d class="fear">beim erstmaligen treffen die Aufgabe gemacht werden</d></a></li>
-          <li><a href="#viertes" class="internalink">Treffen beide Bälle, erhält das Team die Bälle zurück und darf erneut werfen</a></li>
+          <li><a href="#erstes" class="internalink" onclick="leuchten()">Jeder Spieler eines Teams wirft je einen Ball</a></li>
+          <li><a href="#zweites" class="internalink" onclick="leuchten()">Bälle die aufsetzen, dürfen abgewehrt werden</a></li>
+          <li><a href="#drittes" class="internalink" onclick="leuchten()">Getroffene Becher müssen ausgetrunken werden oder <d class="fear">beim erstmaligen treffen die Aufgabe gemacht werden</d></a></li>
+          <li><a href="#viertes" class="internalink" onclick="leuchten()">Treffen beide Bälle, erhält das Team die Bälle zurück und darf erneut werfen</a></li>
           <li>Anschließend ist das andere Team an der Reihe</li>
-          <li><a href="#fünftes" class="internalink">Ziel ist alle Becher des Gegners zu treffen</a></li>
-          <li><a href="#sechstes" class="internalink">Müsste ein Team den letzten Becher trinken, erfolgt die Redemption</a></li>
+          <li><a href="#fünftes" class="internalink" onclick="leuchten()">Ziel ist alle Becher des Gegners zu treffen</a></li>
+          <li><a href="#sechstes" class="internalink" onclick="leuchten()">Müsste ein Team den letzten Becher trinken, erfolgt die Redemption</a></li>
           <!--<li><a href="#siebtes">Treffer in alle Becher bei der Redemption: Overtime mit je einem Becher</a></li>
           <li><a href="#achtes">andernfalls verliert das Team, dass die Redemption hatte</a></li>
         --><br>
@@ -119,7 +120,7 @@
         <div class="container" id="g5">
           <h3 id="sechstes">Redemption
           </h3>
-            <p> Wenn der letzte Becher getroffen wurde, kann der Gegner solange weiter werfen, bis einmal daneben geworfen wurde. Somit ist es zumindest noch möglich, die "Strafe" zu mildern. Wenn du im Team spielst, kannst du abwechselnd noch solange werfen, bis beide nicht mehr treffen.
+            <p id="animationPara" > Wenn der letzte Becher getroffen wurde, kann der Gegner solange weiter werfen, bis einmal daneben geworfen wurde. Somit ist es zumindest noch möglich, die "Strafe" zu mildern. Wenn du im Team spielst, kannst du abwechselnd noch solange werfen, bis beide nicht mehr treffen.
                 Werden beim Rebuttal alle restlichen Becher getroffen, kann wahlweise noch einer Overtime gespielt werden oder man einigt sich auf Unentschieden. Für die Overtime wird pro Seite ein Becher aufgestellt und die Schlacht beginnt wieder von vorne. Nach dem Sudden Death Prinzip gewinnt das Team, welches zuerst trifft, ohne das der Gegner ebenfalls trifft.
             </p>
           </div>

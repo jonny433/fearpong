@@ -47,12 +47,17 @@ body{
     }
   a:hover{
       color: blue;
-<<<<<<< HEAD
-      font-size: 17px;
       text-transform: uppercase;
-=======
->>>>>>> master
-      text-transform: uppercase;
+    }
+  .anim{
+      animation-name: leucht;
+      animation-duration: 3s;
+      animation-iteration-count: infinite; 
+    }
+  @keyframes leucht {
+    5%{
+        color:  green;
+      }
     }
   .container{
       border: 1px solid #666;
