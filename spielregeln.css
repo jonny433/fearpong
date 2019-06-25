@@ -21,7 +21,7 @@ body{
           2px 2px 1px #A4A4A4;
     }
 
-  h1, h2, h3, p, a, li {
+  h2, h3, p, a, li {
     font-family: arial;
   }
 
@@ -52,7 +52,7 @@ body{
   .anim{
       animation-name: leucht;
       animation-duration: 3s;
-      animation-iteration-count: infinite; 
+      animation-iteration-count: infinite;
     }
   @keyframes leucht {
     5%{

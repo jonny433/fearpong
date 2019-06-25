@@ -42,7 +42,7 @@ p.banner {
 .alpha {
   font-size: 5rem;
   margin-bottom: 0.33rem;
-  font-family: 'Bree Serif';
+  font-family: 'Bree Serif' !important;
 }
 
 /* "THE FUTURE OF DRINKING GAMES" */
