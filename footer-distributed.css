@@ -1,13 +1,18 @@
+footer {
+	margin: 80px -8px -8px -8px;
+	bottom: 0;
+}
+
 .footer-distributed{
 	background-color: #292c2f;
 	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
 	box-sizing: border-box;
-	width: 100%;
+	width: auto;
+	height: 160px;
 	text-align: left;
 	font: normal 16px sans-serif;
 
 	padding: 45px 50px;
-	margin-top: 80px;
 }
 
 .footer-distributed .footer-left p{

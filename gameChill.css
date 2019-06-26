@@ -1,10 +1,5 @@
-div {
-  margin-top: 5%;
-  text-align: center;
-}
-
 /* Schrift CSS */
-div.container p {
+div.box p {
   font-family: "Century Gothic", CenturyGothic;
   font-size: 30px;
   padding: 20px;
@@ -18,19 +13,22 @@ div.container p {
       2px 2px 1px #A4A4A4;
 }
 
-.container {
+.box {
   border: 1px solid black;
   border-radius: 10px; /*10*/
-  margin: 20px;
+  margin: 5% 10% 5% 10%;
   box-shadow: 6px 6px 6px;
   background-image: linear-gradient(45deg, rgba(255,69,0,0.43), rgba(255,165,0,0.5));
 }
 
 /* Ende Schrift CSS */
 
-.button {
-  margin-top: 3%;
-  border-radius: 2%;
+.knopf {
+  width: 20%;
+  margin-left: 40%;
+  margin-right: 40%;
+  margin-bottom: 3%;
+  border-radius: 10px;
   border: none;
   outline: 0;
   padding: 10px 20px 10px 20px;
