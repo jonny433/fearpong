@@ -33,12 +33,26 @@ html {
 }
 
 .column {
+  display: grid;
   float: left;
   width: 25%;
   margin-bottom: 16px;
   padding: 0 8px;
+  grid-template-areas: "Jonny Samu Paulo Mo";
 }
-
+#c1{grid-area: Jonny;}
+#c2{grid-area: Samuel;}
+#c3{grid-area: Paulo;}
+#c4{grid-area: Mo;}
+@media(max-width: 1000px){
+    .column{
+      grid-template-areas: "Jonny"
+                           "Samu"
+                           "Paulo"
+                           "Mo";
+      width: 100%;
+    }
+}
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   height: 620px;
