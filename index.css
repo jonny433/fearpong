@@ -31,7 +31,7 @@ body {
     #sidebar li a, #sidebarLine {
       display: block;
       color: white;
-      font-size: 150%;
+      font-size: 250%;
       padding: 25px;
       text-align: center;
       text-decoration: none;
@@ -120,6 +120,14 @@ body {
   clear: both;
   display: table;
 }
+
+@media(max-height: 650px) {
+    #sidebar li a, #sidebarLine {
+      font-size: 150%;
+    }
+}
+
+
 /* TeamBild...
 img.teamBild {
   display: block;
