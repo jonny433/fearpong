@@ -8,11 +8,12 @@
 #homeLink {
   text-decoration: none;
   color: #fff;
+  text-transform: capitalize;
 }
 
 h1.banner {
   line-height: 1;
-  margin-top: 0;
+  margin-top: 10px !important;
   color: #fff;
   display: inline-block;
   position: relative;
@@ -27,19 +28,16 @@ h1.banner {
   */
 }
 
-#homeLink {
-  text-transform: capitalize;
-}
-
 p.banner {
-  margin-top: 4rem;
+  margin-top: 1.5rem;
+  padding-bottom: 25px !important;
   color: #fff;
   font-size: 0.9rem;
   line-height: 1;
 }
 
 /* "FearPong" */
-.alpha {
+.alpha a {
   font-size: 5rem;
   margin-bottom: 0.33rem;
   font-family: 'Bree Serif' !important;
@@ -87,7 +85,7 @@ p.banner {
 }
 
 section {
-  height:220px;
+  height:200px;
   margin-left: -8px;
   margin-right: -8px;
   margin-top: -8px;
