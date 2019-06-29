@@ -1,7 +1,7 @@
-//programm beinhalet die logik hinter dem spielfeld
+//logic behind the game
 console.log("game.js geladen...");
 
-//container für alle Fragen
+//container for all standard questions
 let questionsSexy = [
   "Lass dir einen Knutschfleck verpassen",
   "Tausche dein Oberteil mit dem Spieler rechts von dir",
@@ -24,6 +24,22 @@ let questionsSexy = [
   "Trinke aus dem Bauchnabel eines Mitspielers"
 ]
 
+
+//set up localStorage in browser
+function initStorage(){
+  storage = localStorage;
+  for(let i = 0; i < questions.length; i++){
+    storage.setItem(i, questions[i]);
+  }
+  console.log("initialization completed");
+}
+
+//return element in storage for specific index
+function returnStorage(index){
+  return storage.getItem(index);
+}
+
+
 let alreadyClicked = [false, false, false, false, false, false, false, false, false, false,
   false, false, false, false, false, false, false, false, false, false];
 
@@ -31,7 +47,7 @@ let checkForWinTeam1 = 0;
 let checkForWinTeam2 = 0;
 
 function confirmDare(){
-  if(window.confirm("Willst du eine Aufgabe machen?")) return true
+  if(window.confirm("Willst du eine Aufgabe machen(Ja) oder trinken(abbrechen)?")) return true
   else return false;
 }
 
@@ -40,8 +56,8 @@ function cupClicked(id, num){
   if(alreadyClicked[num] == false){
     let choice = confirmDare();
     if(choice == true){
-      let random = Math.floor(Math.random() * questionsSexy.length) //zufällige Zahl 0 bis questionsSexy.length
-      document.getElementById("aufgabenfeld").innerHTML = questionsSexy[random]; //ändert den text des aufgabenfeldes
+      let random = Math.floor(Math.random() * questions.length) //random number 0 till questionsStandard.length, pretty simple, question could be showed up multiple times
+      document.getElementById("aufgabenfeld").innerHTML = returnStorage(random); //display text
       document.getElementById(id).style.border = "solid black 1px"
       alreadyClicked[num] = true;
     }
@@ -80,7 +96,11 @@ function checkForEvents(id, num){
 }
 
 
-//aufruf der funktion für die verschiedenen becher
+//--------consider everything below that line as main()----------------------
+
+initStorage();
+
+//checking for all the necessary events
 checkForEvents("t10", 0);
 checkForEvents("t11", 1);
 checkForEvents("t12", 2);
