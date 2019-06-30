@@ -18,7 +18,8 @@ div.box p {
   border-radius: 10px; /*10*/
   margin: 5% 10% 5% 10%;
   box-shadow: 6px 6px 6px;
-  background-image: linear-gradient(45deg, rgba(255,69,0,0.43), rgba(255,165,0,0.5));
+  background-color: #f9fcff;
+  background-image: linear-gradient(147deg, #f9fcff 0%, #dee4ea 74%);
 }
 
 /* Ende Schrift CSS */

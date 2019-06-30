@@ -3,17 +3,26 @@
 
 <head>
   <link rel="stylesheet" href="banner.css" media="all">
+  <link rel="stylesheet" href="aufgaben.css" media="all">
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <link rel="stylesheet" href="footer-distributed.css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="footer, links, icons" />
+
   <script src="sidebar.js"></script>
   <script src="gameStandard.js"></script>
   <script src="aufgaben.js"></script>
-  <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 
 <body>
   <!-- Banner -->
   <section class="banner" data-description="Banner">
     <div class="wrapper">
-      <h1 class="banner alpha regular double-header-line"><a id="homeLink" href="index.html">FearPong</a></h1>
+      <h1 class="banner alpha regular double-header-line"><a id="homeLink" href="spielmodus.html">FearPong</a></h1>
       <p class="banner beta regular">The future of drinking games</p>
     </div>
   </section>
@@ -44,10 +53,53 @@
     </div>
     <!-- -Ende Menü -->
 
-    <h1>Hier könnt ihr euch eigene Aufgaben ausdenken.</h1>
-    <h3>Wir hoffen ihr seid noch viel schmutziger als wir</h3>
-    <input type="text" id="task"></input>
-    <button onclick="addTaskToStorage();">Hinzufügen</button>
+    <h1 id="heading">Eure Aufgaben</h1>
+
+    <div class="box">
+      <div id="aufgaben-text">
+        <p>Hier könnt ihr euch eigene Aufgaben ausdenken.<br>
+          Wir hoffen ihr seid noch viel schmutziger als wir.
+        </p>
+      </div>
+      <div id="aufgaben-eingabefeld">
+        <input type="text" id="task" placeholder="Neue Aufgabe hier eintragen"></input>
+        <div id="aufgaben-button">
+          <button onclick="addTaskToStorage();">Zu "Standard-Modus" hinzufügen</button>
+          <button onclick="addTaskToStorage();">Zu "Sexy-Modus" hinzufügen</button>
+        </div>
+      </div>
+    </div>
+
+
+
+    <footer class="footer-distributed">
+
+          <div id="footer" class="footer-right">
+
+            <a href="https://www.instagram.com/spaceferkel/?hl=de"><i class="fa fa-facebook"></i></a>
+    				<a href="https://www.instagram.com/spaceferkel/?hl=de"><i class="fa fa-twitter"></i></a>
+    				<a href="https://www.instagram.com/spaceferkel/?hl=de"><i class="fa fa-linkedin"></i></a>
+    				<a href="https://github.com/jonny433/fearpong"><i class="fa fa-github"></i></a>
+
+          </div>
+
+          <div class="footer-left">
+
+            <p class="footer-links">
+              <a href="spielmodus.html">Home</a>
+              ·
+              <a href="impressum.html">Impressum</a>
+              ·
+              <a href="team.html">Über uns</a>
+              ·
+              <a href="spielregeln.html">Spielregeln</a>
+
+            </p>
+
+            <p>MPJS &copy; 2019</p>
+          </div>
+
+        </footer>
 </body>
 
 </html>

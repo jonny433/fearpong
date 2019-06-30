@@ -72,7 +72,7 @@ body {
 /* ----------- Ende Menü  CSS ----------- */
 
 /* Heading CSS */
-.heading {
+#heading {
   font-family: "Century Gothic", CenturyGothic;
   font-size: 30px;
   padding: 20px;
