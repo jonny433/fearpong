@@ -37,6 +37,9 @@ button {
   border-radius: 10px; /*10*/
   margin: auto;/*auto*/
   padding: 4px; /*4*/
+
+  resize: none;
+  overflow: auto;
 }
 
 @media(max-width: 1000px) {
