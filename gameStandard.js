@@ -38,14 +38,15 @@ let questions = [
   "Trage ein selbst ausgedachtes Gedicht über einen Begriff vor, den deine Mitspieler bestimmen"
 ]
 
+local_storage = localStorage;
 
 //set up localStorage in browser
 function initStorage(){
-  storage = localStorage;
+  storage = sessionStorage;
   for(let i = 0; i < questions.length; i++){
     storage.setItem(i, questions[i]);
   }
-  console.log("initialization completed");
+  console.log("initialization of sessionStorage completed");
 }
 
 //return element in storage for specific index
@@ -105,7 +106,7 @@ function cupClicked(id, num){
     if(alreadyDrunk[num] == false){
       document.getElementById(id).style.opacity = 0.2; //set cup transparent
       console.log("Set " + id + " invisible");
-      document.getElementById("aufgabenfeld").innerHTML = ""; //refresh task container
+      document.getElementById("aufgabenfeld").innerHTML = ""; //reset task container
       alreadyDrunk[num] = true;
       if(num > 9) checkForWinTeam2++;
       else checkForWinTeam1++;
