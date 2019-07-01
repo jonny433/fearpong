@@ -4,13 +4,8 @@ div.box p {
   font-size: 30px;
   padding: 20px;
   text-align: center;
-  text-transform: uppercase;
   text-rendering: optimizeLegibility;
-
   color: black;
-    letter-spacing: .1em;
-    text-shadow:
-      2px 2px 1px #A4A4A4;
 }
 
 .box {
