@@ -38,15 +38,15 @@ let questions = [
   "Trage ein selbst ausgedachtes Gedicht über einen Begriff vor, den deine Mitspieler bestimmen"
 ]
 
-local_storage = localStorage;
+let questions_len = questions.length;
+storage = localStorage;
 
 //set up localStorage in browser
 function initStorage(){
-  storage = sessionStorage;
   for(let i = 0; i < questions.length; i++){
     storage.setItem(i, questions[i]);
   }
-  console.log("initialization of sessionStorage completed");
+  console.log("initialization of localStorage completed");
 }
 
 //return element in storage for specific index
@@ -137,7 +137,10 @@ function checkForEvents(id, num){
 
 //--------consider everything below that line as main()----------------------
 
-initStorage();
+if(!storage.getItem("visited")){
+  initStorage();
+  storage.setItem("visied", true);
+}
 
 //checking for all the necessary events
 checkForEvents("t10", 0);

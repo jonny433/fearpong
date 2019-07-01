@@ -6,10 +6,5 @@ function addTaskToStorage(){
   let task = document.getElementById("task").value;
   questions.push(task);
   console.log("Neue Frage: " + questions[questions.length]);
-  function(){
-    for(let i = 0; i < questions.length; i++){
-      local_storage.setItem(i, questions[i]);
-    }
-    console.log("initialization of localStorage completed");
-  }
+  initStorage();
 }
