@@ -34,7 +34,7 @@ body{
     }
   a:hover{
       color: blue;
-      text-transform: uppercase;
+      /*text-transform: uppercase; auf mehr fachen wunsch von euch (Moritz)*/
     }
   .anim{
       animation-name: leucht;
