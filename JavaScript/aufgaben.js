@@ -5,6 +5,7 @@ console.log("Aufgaben.js ist geladen");
 function addTaskToStorage(){
   let task = document.getElementById("task").value;
   questions.push(task);
-  console.log("Neue Frage: " + questions[questions.length]);
+  let len = questions.length;
+  console.log("Neue Frage: " + questions[len]);
   initStorage();
 }

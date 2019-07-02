@@ -38,7 +38,7 @@ let questions = [
   "Trage ein selbst ausgedachtes Gedicht über einen Begriff vor, den deine Mitspieler bestimmen"
 ]
 
-let questions_len = questions.length;
+/*
 storage = localStorage;
 
 //set up localStorage in browser
@@ -53,10 +53,11 @@ function initStorage(){
 function returnStorage(index){
   return storage.getItem(index);
 }
-
-
-let alreadyClicked = [false, false, false, false, false, false, false, false, false, false,
-  false, false, false, false, false, false, false, false, false, false];
+*/
+let alreadyClicked = [];
+for(let i = 0; i < 19; i++){
+  alreadyClicked.push(false);
+}
 let alreadyDrunk = alreadyClicked;
 
 let checkForWinTeam1 = 0;
@@ -83,7 +84,8 @@ function cupClicked(id, num){
     //if they want the task, they will get the task
     if(choice == true){
       let random = Math.floor(Math.random() * questions.length) //random number 0 till questionsStandard.length, pretty simple, question could be showed up multiple times
-      document.getElementById("aufgabenfeld").innerHTML = returnStorage(random); //display text
+      //document.getElementById("aufgabenfeld").innerHTML = returnStorage(random); //display text
+      document.getElementById("aufgabenfeld").innerHTML = questions[random];
       document.getElementById(id).style.border = "solid black 1px"
     }
 
@@ -137,10 +139,12 @@ function checkForEvents(id, num){
 
 //--------consider everything below that line as main()----------------------
 
+/*
 if(!storage.getItem("visited")){
   initStorage();
   storage.setItem("visied", true);
 }
+*/
 
 //checking for all the necessary events
 checkForEvents("t10", 0);
