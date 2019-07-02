@@ -1,0 +1,23 @@
+{
+  "name": "fearpong",
+  "productName": "Fearpong",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonny433/fearpong.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jonny433/fearpong/issues"
+  },
+  "homepage": "https://github.com/jonny433/fearpong#readme",
+  "devDependencies": {
+    "electron": "^5.0.6"
+  }
+}
