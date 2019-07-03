@@ -62,8 +62,8 @@
       <div id="aufgaben-eingabefeld">
         <input type="text" id="task" placeholder="Neue Aufgabe hier eintragen"></input>
         <div id="aufgaben-button">
-          <button onclick="addTaskToStorage();">Zu "Standard-Modus" hinzufügen</button>
-          <button onclick="addTaskToStorage();">Zu "Sexy-Modus" hinzufügen</button>
+          <button onclick="troll_standard();">Zu "Standard-Modus" hinzufügen</button>
+          <button onclick="troll_sexy();">Zu "Sexy-Modus" hinzufügen</button>
         </div>
       </div>
     </div>
@@ -95,8 +95,20 @@
           </div>
 
         </footer>
+        <!--
         <script src="..\JavaScript\gameSexy.js"></script>
         <script src="..\JavaScript\aufgaben.js"></script>
+      -->
+      <script>
+        function troll_sexy(){
+          document.getElementById("task").value = "";
+          alert("Aufgabe zum Sexy-Modus hinzugefügt.");
+        }
+        function troll_standard(){
+          document.getElementById("task").value = "";
+          alert("Aufgabe zum Standard-Modus hinzugefügt.");
+        }
+      </script>
 </body>
 
 </html>

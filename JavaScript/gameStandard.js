@@ -70,58 +70,50 @@ function confirmDare(){
 
 //unterste Funktion
 function cupClicked(id, num){
-
   //cup was clicked in the first place?
   //no?
   if(alreadyClicked[num] == false){
-
     //no the cup was clicked
     alreadyClicked[num] = true;
-
     //ask for choice drink or dare
     let choice = confirmDare();
-
     //if they want the task, they will get the task
     if(choice == true){
-      let random = Math.floor(Math.random() * questions.length) //random number 0 till questionsStandard.length, pretty simple, question could be showed up multiple times
+      let random = Math.floor(Math.random() * questions.length) //random number 0 till questions.length, pretty simple, question could be showed up multiple times
       //document.getElementById("aufgabenfeld").innerHTML = returnStorage(random); //display text
       document.getElementById("aufgabenfeld").innerHTML = questions[random];
       document.getElementById(id).style.border = "solid black 1px"
     }
-
     //otherwise the cup is set drunk and out of game
     else{
-      document.getElementById(id).style.opacity = 0.2; //setzt den becher transparent
+      document.getElementById(id).style.opacity = 0.2; //set cup invisible
       console.log("Set " + id + " invisible");
-      document.getElementById("aufgabenfeld").innerHTML = ""; //zurücksetzen des aufgabenfeldes
+      document.getElementById("aufgabenfeld").innerHTML = ""; //reset taskfield
       document.getElementById(id).style.border = "solid black 1px"
       alreadyDrunk[num] = true;
-      if(num > 9) checkForWinTeam2++;
-      else checkForWinTeam1++;
+      if(num > 9 && !alreadyClicked[num]) checkForWinTeam2++;
+      else if(num <= 9 && !alreadyClicked[num]) checkForWinTeam1++;
     }
   }
-
   //yes?
   else{
-
     //now they dont have any other choices, drink or die
     if(alreadyDrunk[num] == false){
-      document.getElementById(id).style.opacity = 0.2; //set cup transparent
+      document.getElementById(id).style.opacity = 0.2; //set cup invisible
       console.log("Set " + id + " invisible");
       document.getElementById("aufgabenfeld").innerHTML = ""; //reset task container
       alreadyDrunk[num] = true;
-      if(num > 9) checkForWinTeam2++;
-      else checkForWinTeam1++;
+      if(num > 9 && !alreadyClicked[num]) checkForWinTeam2++;
+      else if(num <= 9 && !alreadyClicked[num]) checkForWinTeam1++;
     }
     else{
-      document.getElementById(id).style.opacity = 0.2; //setzt den becher transparent
+      document.getElementById(id).style.opacity = 0.2; //set cup invisible
       console.log("Set " + id + " invisible");
-      document.getElementById("aufgabenfeld").innerHTML = ""; //zurücksetzen des aufgabenfeldes
-      if(num > 9) checkForWinTeam2++;
-      else checkForWinTeam1++;
+      document.getElementById("aufgabenfeld").innerHTML = ""; //reset taskfield
+      if(num > 9 && !alreadyClicked[num]) checkForWinTeam2++;
+      else if(num <= 9 && !alreadyClicked[num]) checkForWinTeam1++;
     }
   }
-
   console.log("Team Blau: " + checkForWinTeam1);
   console.log("Team Rot: " + checkForWinTeam2);
   if(checkForWinTeam1 == 10) window.alert("Team Rot gewinnt");
@@ -129,7 +121,6 @@ function cupClicked(id, num){
 }
 
 
-//funktion zum event handeln
 function checkForEvents(id, num){
   document.getElementById(id).addEventListener("click", function() {
       cupClicked(id, num);
